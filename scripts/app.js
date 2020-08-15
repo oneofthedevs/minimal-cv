@@ -6,10 +6,7 @@ togglbtn.addEventListener("click", function () {
   console.log("clicked");
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
-    toggleimg.setAttribute(
-      "src",
-      "https://img.icons8.com/ios/50/000000/sun.png"
-    );
+    toggleimg.setAttribute("src", "./assets/sun.svg");
   } else {
     body.classList.add("dark");
     toggleimg.setAttribute(

@@ -31,6 +31,7 @@ body {
   background: var(--background-color);
   color: var(--font-color);
   transition: 0.5s;
+  scroll-behavior: smooth;
 }
 
 .toggle-btn {
@@ -44,6 +45,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  // box-shadow: 2px 2px 4px var(--font-color);
+  cursor: pointer;
   img {
     height: 50px;
     width: auto;
@@ -56,20 +59,45 @@ body {
 .main-margin {
   margin: 0 25%;
 }
-
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
 nav {
-  background: transparent;
+  background: var(--background-color);
   position: fixed;
   top: 0;
   width: 100%;
   .nav-container {
     display: flex;
-    height: 48px;
+    height: 64px;
+    align-items: center;
     .left {
       flex: 1;
+      .logo {
+        font-size: 2rem;
+      }
     }
     .right {
-      flex: 2;
+      flex: 5;
+      display: flex;
+      justify-content: flex-end;
+      .nav-link {
+        padding: 0.5rem 1rem;
+        margin: 0 0 5px 0;
+        border: 1px solid transparent;
+        transition: 0.2s;
+        &:hover {
+          transition: 0.4s;
+          border-bottom: 1px solid var(--font-color);
+        }
+      }
     }
   }
 }
@@ -171,16 +199,6 @@ nav {
         margin: 20px 15px;
         p {
           font-size: 0.9rem;
-        }
-      }
-      a {
-        text-decoration: none;
-        color: var(--font-color);
-        &:hover {
-          text-decoration: none;
-        }
-        &:active {
-          text-decoration: none;
         }
       }
       .project-links {

@@ -10,20 +10,23 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
-  <body class="dark">
+  <body>
     <div class="toggle-btn">
-      <img
-        class="toggle-img"
-        src="https://img.icons8.com/carbon-copy/100/000000/crescent-moon.png"
-      />
+      <img class="toggle-img" src="./assets/sun.svg" />
     </div>
     <nav>
-      <div class="nav-container">
-        <div class="left">1</div>
-        <div class="right">3</div>
+      <div class="nav-container main-margin">
+        <div class="left"><h2 class="logo">DC</h2></div>
+        <div class="right">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#about-me" class="nav-link">About me</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <!-- <a href="#xp" class="nav-link">Home</a> -->
+          <a href="#projects" class="nav-link">Projects</a>
+        </div>
       </div>
     </nav>
-
+    <span id="hero"></span>
     <section class="hero main-margin">
       <div class="name-div">
         <h1 class="heading">
@@ -47,10 +50,11 @@
         <h3 class="sub-heading">Full-stack developer and UI designer</h3>
       </div>
     </section>
-    <section class="content main-margin">
+    <span id="about-me"></span>
+    <section class="content main-margin" id="about-me">
       <div class="about-me">
         <h2>🐱‍👤Who am I?</h2>
-        <p>
+        <p id="skills">
           I am a Web developer/designer based in India. I have a passion for web
           design and love to create for web and mobile devices
         </p>
@@ -87,6 +91,7 @@
           </div>
         </div>
       </div>
+      <span id="xp"></span>
       <div class="xp">
         <h2>🐱‍🐉Experience</h2>
         <div class="xp-element">
@@ -99,7 +104,7 @@
               Designed and developed Prototype of an application utlizing
               Angular 9
             </li>
-            <li>
+            <li id="projects">
               Designed and developed Prototype of an application utlizing .Net
               MVC, JQuery and JavaScript
             </li>
@@ -113,6 +118,7 @@
           <p class="by">Gateway Group of Companies</p>
         </div>
       </div> -->
+      <span></span>
       <div class="projects">
         <h2>🚀Projects</h2>
         <div class="project-section">
@@ -122,8 +128,8 @@
             /></a> -->
             <h6>Corona-Stats</h6>
             <p>
-              Angular Project made using 3rd party API to show live numbers of
-              Covid-19 around the world and in each country
+              Angular Project made using 3rd party API and chartJS to show live
+              numbers of Covid-19 around the world and in each country
             </p>
             <div class="project-links">
               <a
@@ -236,22 +242,6 @@
               >
             </div>
           </div>
-          <!-- <a href="https://github.com/oneofthedevs/corona-stats">
-            <div class="project-card">
-              <img
-                src=""
-                alt="Corona Stats Img"
-                loading="lazy"
-                height="300px"
-                width="500px"
-              />
-              <h6>Corona-Stats</h6>
-              <p>
-                Angular Project made using 3rd party API to show live numbers of
-                Covid-19 around the world and in each country
-              </p>
-            </div>
-          </a> -->
         </div>
       </div>
     </section>
