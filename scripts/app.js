@@ -3,7 +3,6 @@ const body = document.querySelector("body");
 const toggleimg = document.querySelector(".toggle-img");
 
 togglbtn.addEventListener("click", function () {
-  console.log("clicked");
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
     toggleimg.setAttribute("src", "./assets/sun.svg");
