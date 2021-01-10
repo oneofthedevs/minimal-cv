@@ -248,6 +248,9 @@ h6 {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 20px 30px 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content .projects .project-section .project p {
@@ -262,7 +265,7 @@ h6 {
       flex-wrap: wrap;
 }
 
-.content .projects .project-section .project-links .link {
+.link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,14 +281,14 @@ h6 {
   font-size: 1rem;
 }
 
-.content .projects .project-section .project-links .link:hover {
+.link:hover {
   background: var(--font-color);
   color: var(--background-color);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.content .projects .project-section .project-links .link img {
+.link img {
   height: 22px;
   width: auto;
   margin: 0 10px 0 0;
@@ -302,6 +305,12 @@ footer .socials {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .social-links {
@@ -332,6 +341,10 @@ footer .comm .comm-link:hover {
 footer img {
   height: 22px;
   width: auto;
+}
+
+footer .pdf-link .link {
+  margin: 0;
 }
 
 .glitch {
